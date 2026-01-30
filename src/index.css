@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Custom color palette from design */
+  --color-smoky-black: #11120d;
+  --color-olive-drab: #565449;
+  --color-bone: #d8cfbc;
+  --color-floral-white: #fffbf4;
+
+  /* shadcn/ui theme variables */
+  --color-background: var(--color-floral-white);
+  --color-foreground: var(--color-smoky-black);
+
+  --color-card: var(--color-floral-white);
+  --color-card-foreground: var(--color-smoky-black);
+
+  --color-popover: var(--color-floral-white);
+  --color-popover-foreground: var(--color-smoky-black);
+
+  --color-primary: var(--color-olive-drab);
+  --color-primary-foreground: var(--color-floral-white);
+
+  --color-secondary: var(--color-bone);
+  --color-secondary-foreground: var(--color-smoky-black);
+
+  --color-muted: var(--color-bone);
+  --color-muted-foreground: var(--color-olive-drab);
+
+  --color-accent: var(--color-olive-drab);
+  --color-accent-foreground: var(--color-floral-white);
+
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: var(--color-floral-white);
+
+  --color-border: var(--color-olive-drab);
+  --color-input: var(--color-olive-drab);
+  --color-ring: var(--color-olive-drab);
+
+  --radius: 0.5rem;
+}
+
+/* Dark mode variant */
+.dark {
+  --color-background: var(--color-smoky-black);
+  --color-foreground: var(--color-floral-white);
+
+  --color-card: #1a1b15;
+  --color-card-foreground: var(--color-floral-white);
+
+  --color-popover: var(--color-smoky-black);
+  --color-popover-foreground: var(--color-floral-white);
+
+  --color-primary: var(--color-olive-drab);
+  --color-primary-foreground: var(--color-floral-white);
+
+  --color-secondary: #2a2b22;
+  --color-secondary-foreground: var(--color-bone);
+
+  --color-muted: #2a2b22;
+  --color-muted-foreground: var(--color-bone);
+
+  --color-accent: var(--color-olive-drab);
+  --color-accent-foreground: var(--color-floral-white);
+
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: var(--color-floral-white);
+
+  --color-border: var(--color-olive-drab);
+  --color-input: var(--color-olive-drab);
+  --color-ring: var(--color-bone);
+}
+
+/* Base styles */
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+}
+  
